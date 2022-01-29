@@ -28,7 +28,7 @@ const store = configureStore({
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }),
-  devTools: true, //Чтобы тулзы работали на GhPages //process.env.NODE_ENV === "development"
+  // devTools: process.env.NODE_ENV === "development", //Чтобы тулзы работали на GhPages
 });
 
 const persistor = persistStore(store);
