@@ -15,6 +15,7 @@ import contactsReducer from "./Contacts/contacts-reducers";
 const persistConfig = {
   key: "contacts",
   storage,
+  blacklist: ["filter"],
 };
 
 const store = configureStore({
